@@ -8,28 +8,48 @@
 
 <body>
 	<form method="post">
-     <label for="name">Name</label>
-		<input element="Name" Description="Text Input" ID="name" Additional Requirements="Required">
-	<label for="email">Email</label>
-		<input element="Email" Description="Email Input" ID="email" Additional Requirements="Required">	</br>
-    <input type="radio" id="male" name="gender" value="male" Additional Requirements="Required, name attribute as 'gender'">
+  <!-- Name field -->
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required></br>
+  
+  <!-- Email field -->
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required></br></br>
+  
+  <!-- Gender field -->
+  <label for="gender">Gender:</label>
+  <input type="radio" id="male" name="gender" value="male" required>
   <label for="male">Male</label>
-  <input type="radio" id="female" name="gender" value="female" Additional Requirements="Required, name attribute as 'gender'">
-  <label for="female">Female</label>
-<label for="laptop">Laptop Brands</label>
-<select element="Laptop Brands" id="laptop"  Additional Requirements>
-	<option>Apple</option>
-		<option>Asus</option>
-		<option> HP</option>
-</select>
-<label for="age">Age</label>
-<input Element="Age" Description="Number Input" id="age" Additional Requirements="Required">		
-<label for="dob">Dob</label>
-<input Element="Date of Birth" Description="Date Input" id="dob" Additional Requirements="Required">	
-<label for="password">Password</label>
-<input Element="Password" Description="Password Input" id="password" Additional Requirements="Required">			
-<input type="button">
-	</form>
+  <input type="radio" id="female" name="gender" value="female" required>
+  <label for="female">Female</label></br>
+  
+  <!-- Laptop Brands field -->
+  <label for="laptop">Laptop Brands:</label>
+  <select id="laptop" name="laptop">
+    <option value="apple">Apple</option>
+    <option value="asus">Asus</option>
+    <option value="hp">HP</option>
+  </select></br>
+  
+  <!-- Age field -->
+  <label for="age">Age:</label>
+  <input type="number" id="age" name="age" required></br>
+  
+  <!-- Date of Birth field -->
+  <label for="dob">Date of Birth:</label>
+  <input type="date" id="dob" name="dob" required</br>
+  
+  <!-- Password field -->
+  </br><label for="password">Password:</label>
+  <input type="password" id="password" name="password" required></br>
+  
+  <!-- Portfolio URL field -->
+  <label for="portfolio">Portfolio URL:</label>
+  <input type="url" id="portfolio" name="portfolio"></br>
+  
+  <!-- Submit Button -->
+  <button type="submit">Submit</button>
+</form>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
